@@ -1,0 +1,850 @@
+/* account start */
+.account__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 4rem 2rem;
+	margin-top: 4rem;
+
+  .account__title {
+    font-size: 2rem;
+		margin-bottom: 2rem;
+		text-transform: capitalize;
+  }
+
+  .account__content {
+    display: flex;
+		flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    .account__aside {
+      display: flex;
+			flex-direction: column;
+      justify-content: center;
+			align-items: center;
+			width: 25%;
+			padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 2rem 1rem;
+      
+      
+      .account__aside-btn {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #2d83c9;
+        font-size: 1rem;
+        color: #fff;
+        cursor: pointer;
+        margin-bottom: 1rem;
+
+        &:hover {
+          background-color: #2469a1;
+        }
+      }
+    }
+  
+    .account__main {
+      display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+      width: 75%;
+      margin: 2rem 1rem;
+      
+      .account__profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+        .account__profile-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+  
+        .account__profile-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          
+          .account__profile-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+
+            .account__profile-image-img {
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 0.5rem;
+              margin-bottom: 0.5rem;
+            }
+  
+            .account__profile-image-label {
+              padding: 0.1rem 0.3rem;
+							border: none;
+							border-radius: 0.3rem;
+							background-color: #b8b8b8;
+							color: #fff;
+							font-size: 1rem;
+							cursor: pointer;
+
+              &:hover {
+                background-color: #a1a1a1;
+              }
+            }
+  
+            .account__profile-image-input {
+              display: none;
+            }
+          }
+          
+          .account__profile-name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+
+            .account__profile-name-label {
+              margin-bottom: 0.5rem;
+            }
+
+            .account__profile-name-input {
+              padding: 0.5rem 1rem;
+              border: none;
+              border-radius: 0.5rem;
+              background-color: #f5f5f5;
+              outline: none;
+            }
+          }
+  
+          .account__profile-email {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+
+            .account__profile-email-label {
+              margin-bottom: 0.5rem;
+            }
+
+            .account__profile-email-input {
+              padding: 0.5rem 1rem;
+              border: none;
+              border-radius: 0.5rem;
+              background-color: #f5f5f5;
+              outline: none;
+            }
+          }
+
+          .account__profile-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #2d83c9;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #2469a1;
+            }
+          }
+        }
+      }
+  
+      .account__password {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        .account__password-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+  
+        .account__password-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          
+          .account__password-current {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+
+            .account__password-current-label {
+              margin-bottom: 0.5rem;
+            }
+
+            .account__password-current-input {
+              padding: 0.5rem 1rem;
+              border: none;
+              border-radius: 0.5rem;
+              background-color: #f5f5f5;
+              outline: none;
+            }
+          }
+  
+          .account__password-new {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+
+            .account__password-new-label {
+              margin-bottom: 0.5rem;
+            }
+
+            .account__password-new-input {
+              padding: 0.5rem 1rem;
+              border: none;
+              border-radius: 0.5rem;
+              background-color: #f5f5f5;
+              outline: none;
+            }
+          }
+  
+          .account__password-confirm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+
+            .account__password-confirm-label {
+              margin-bottom: 0.5rem;
+            }
+
+            .account__password-confirm-input {
+              padding: 0.5rem 1rem;
+              border: none;
+              border-radius: 0.5rem;
+              background-color: #f5f5f5;
+              outline: none;
+            }
+          }
+
+          .account__password-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #2d83c9;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #2469a1;
+            }
+          }
+        }
+      }
+      
+      .account__donations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
+        .account__donations-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .account__donations-headings {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 1rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+
+          .account__donations-heading-name {
+            flex: 1;
+          }
+
+          .account__donations-heading-date {
+            flex: 1;
+          }
+
+          .account__donations-heading-amount {
+            flex: 1;
+          }
+        }
+
+        .account__donations-items {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          .account__donation {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+
+            .account__donation-name {
+              flex: 1;
+            }
+
+            .account__donation-date {
+              flex: 1;
+            }
+
+            .account__donation-amount {
+              flex: 1;
+            }
+          }
+        }
+
+        .account__donations-summary {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 1rem;
+          font-weight: bold;
+
+          .account__donations-summary-title {
+            flex: 1;
+          }
+
+          .account__donations-summary-date {
+            flex: 1;
+          }
+
+          .account__donations-summary-total {
+            flex: 1;
+          }
+        }
+      }
+  
+      .account__charities {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
+        .account__charities-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .account__charities-headings {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 1rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+
+          .account__charities-heading-name {
+            flex: 1;
+          }
+
+          .account__charities-heading-date {
+            flex: 1;
+          }
+
+          .account__charities-heading-amount {
+            flex: 1;
+          }
+        }
+
+        .account__charities-items {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          .account__charity {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+
+            .account__charity-name {
+              flex: 1;
+            }
+
+            .account__charity-date {
+              flex: 1;
+            }
+
+            .account__charity-amount {
+              flex: 1;
+            }
+          }
+        }
+
+        .account__charities-summary {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 1rem;
+          font-weight: bold;
+
+          .account__charities-summary-title {
+            flex: 1;
+          }
+
+          .account__charities-summary-date {
+            flex: 1;
+          }
+
+          .account__charities-summary-total {
+            flex: 1;
+          }
+        }
+      }
+
+      .account__add {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        .account__add-title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .account__add-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          width: 100%;
+
+          .account__add-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+
+            .account__add-info-title {
+              font-size: 1rem;
+              font-weight: bold;
+              margin-bottom: 1rem;
+            }
+
+            .account__add-info-items {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+
+              .account__add-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+                
+                .account__add-name-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-name-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+
+              .account__add-category {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                .account__add-category-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-category-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+
+              .account__add-image {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                /* margin-bottom: 1rem; */
+
+                .account__add-image-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-image-input::file-selector-button {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #b8b8b8;
+                  color: #fff;
+                  font-size: 1rem;
+                  cursor: pointer;
+                  margin-right: 0.5rem;
+                }
+
+                .account__add-image-input::file-selector-button:hover {
+                  background-color: #a1a1a1;
+                }
+              }
+            }
+          }
+
+          .account__add-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+
+            .account__add-contact-title {
+              font-size: 1rem;
+              font-weight: bold;
+              margin-bottom: 1rem;
+            }
+
+            .account__add-contact-items {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+
+              .account__add-phone {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                .account__add-phone-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-phone-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+
+              .account__add-email {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                .account__add-email-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-email-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+
+              .account__add-address {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                /* margin-bottom: 1rem; */
+
+                .account__add-address-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-address-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+            }
+          }
+
+          .account__add-social {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+
+            .account__add-social-title {
+              font-size: 1rem;
+              font-weight: bold;
+              margin-bottom: 1rem;
+            }
+
+            .account__add-social-items {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+
+              .account__add-facebook {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                .account__add-facebook-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-facebook-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+
+              .account__add-twitter {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                .account__add-twitter-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-twitter-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+
+              .account__add-instagram {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 1rem;
+
+                .account__add-instagram-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-instagram-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+
+              .account__add-youtube {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                /* margin-bottom: 1rem; */
+
+                .account__add-youtube-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-youtube-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                }
+              }
+            }
+          }
+
+          .account__add-about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5rem;
+            
+            .account__add-about-title {
+              font-size: 1rem;
+              font-weight: bold;
+              margin-bottom: 1rem;
+            }
+
+            .account__add-about-items {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              width: 100%;
+
+              .account__add-description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+                /* margin-bottom: 1rem; */
+
+                .account__add-description-label {
+                  margin-bottom: 0.5rem;
+                }
+
+                .account__add-description-input {
+                  padding: 0.5rem 1rem;
+                  border: none;
+                  border-radius: 0.5rem;
+                  background-color: #f5f5f5;
+                  outline: none;
+                  width: 100%;
+                  height: 400px;
+                  resize: none;
+                }
+              }
+            }
+          }
+
+          .account__add-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: #2d83c9;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+              background-color: #2469a1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.account__container {
+
+  .account__content {
+
+    .account__main {
+      
+      .account__main-section {
+        display: none;
+
+        &.active {
+          display: flex;
+        }
+      }
+    }
+
+    .account__aside {
+
+      .account__aside-btn.active {
+        background-color: #2469a1;
+      }
+    }
+  }
+}
+/* account end */
